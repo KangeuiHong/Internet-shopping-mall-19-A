@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+  <meta charset="UTF-8">
+<TITLE>인터넷 쇼핑몰 </TITLE> 
+ <style>
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  }
+  /* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #cccccc;
+  color: black;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 45%;
+  margin:20px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 50%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px;
+  border-color: black;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #333333;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 2px solid rgba(158, 158, 158, 0.404);
+}
+input[type=button] {
+     width:20%;
+     padding: 12px 20px;
+     background-color: red;
+     color: white;
+     border:1px;
+     border-color: black;
+     cursor: pointer;
+     margin-top: 20px;
+     margin-left:60% ;
+     font-size: 20px;
+     font-style:inherit;
+   }
+input[type=button]:hover {
+     background-color: rgba(255, 0, 0, 0.733);
+   }
+
+</style>
+</HEAD>
+<body>
+  
+  <div class="topnav">
+    <a href="main.html">Home</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+  </div>
+  <div class="header">
+    <h1>SHOPPING MALL</h1>
+    Hello World
+  </div>
+  <div class="row">
+    <div class="leftcolumn">
+      <img src="woodpaint1.png" style="float:right">
+    </div>
+    <div class="rightcolumn">
+      <h2>자작나무 그림</h2>
+      <table>
+        <tr>
+          <th><h2>150,000원</h2></th>
+          <th></th>
+        </tr>
+        <tr>
+          <td>택배 - 무료배송</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>무이자 할부</td>
+          <td>카드 추가혜택</td>
+        </tr>
+        <tr>
+          <td>원산지 - 한국</td>
+          <td></td>
+        </tr>
+      </table>
+      
+      <div class="card">
+        <h3>수량</h3>
+        <input type="radio" name="amount" value="1개">1개
+        <input type="radio" name="amount" value="2개">2개
+        <input type="radio" name="amount" value="3개">3개
+        <input type="radio" name="amount" value="4개">4개
+        <input type="radio" name="amount" value="5개">5개
+      </div>
+      <input type="button" value="구매하기">
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="topnav">
+    <a href="#">상세설명</a>
+  </div>
+  <br>
+  <img src="woodpaint.png" style="margin:auto; max-width: 100%;">
+  <div class="footer">
+        <h1>꼬리말</h1>
+        © 전북대학교 201923089 홍강의
+      </div>
+</body>
+</HTML>

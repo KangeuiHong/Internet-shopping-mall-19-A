@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+  <meta charset="UTF-8">
+<TITLE> 온라인 쇼핑몰 </TITLE>
+<style>
+.img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 200px;
+  float: left;
+}
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  }
+  /* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #cccccc;
+  color: black;
+}
+#gallerywrapper {
+     width:1280px;
+     height:900px;
+     margin:0 auto;
+     position:relative;
+     font-family:verdana, arial, sans-serif;
+ } 
+
+ #gallerywrapper #gallery {
+     position:absolute;
+     left:0;
+     top:0;
+     height:900px;
+     width:1280px;
+     overflow:hidden;
+     text-align:center;
+ } 
+
+ #gallerywrapper #gallery div {
+     width:1280px; height:1200px; 
+     padding-top:10px; 
+     position:relative;
+ } 
+
+ #gallerywrapper #gallery div img {
+     clear:both; 
+     display:block; 
+     margin:0 auto; 
+     border:0;
+ } 
+
+ #gallerywrapper #gallery div h3 {
+     padding:10px 0 0 0; 
+     margin:0; 
+     font-size:18px;
+ } 
+
+ #gallerywrapper #gallery div p {
+     padding:5px 0; 
+     margin:0; 
+     font-size:12px; 
+     line-height:18px;
+ } 
+
+ #gallery .previous{ 
+     display:inline;
+     align-self: auto;
+     margin-left:80px;
+     text-decoration:none;
+ } 
+
+ #gallery .next{ 
+     display:inline;
+     margin-right:80px;
+     text-decoration:none;
+ }
+
+
+ .column{
+   float: left;
+   width: 25%;
+ }
+
+ .row:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding:20px;
+
+}
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+    padding: 14px;
+  }
+}
+ .footer{
+   background-color: #333;
+   font-family: sans-serif;
+   text-align: center;
+   padding: 20px;
+   color:silver;
+   margin: 0px;
+ }
+</style>
+</HEAD>
+<body>
+  <div class="topnav">
+    <a href="main.html">Home</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+ </div>
+
+ <div class="header">
+     <h1>SHOPPING MALL</h1>
+     <p>Welcome Back Everyone!</p>
+ </div>
+
+ <div id="gallerywrapper">
+  <div id="gallery">
+    <div id="pic1">
+      <img src="owlpaint.png" height="700" width="1000" alt="Image 1">
+      <a class="previous" href="#pic5">&lt;</a>
+      <a class="next" href="#pic2">&gt;</a>
+      <h3>Image 1</h3>
+    </div>
+    <div id="pic2">
+      <img src="bedroom.png" height="700" width="1000" alt="Image 2">
+      <a class="previous" href="#pic1">&lt;</a>
+      <a class="next" href="#pic3">&gt;</a>
+      <h3>Image 2</h3>
+    </div>
+    <div id="pic3">
+      <img src="TVroom.png" height="700" width="1000" alt="Image 3">
+      <a class="previous" href="#pic2">&lt;</a>
+      <a class="next" href="#pic4">&gt;</a>
+      <h3>Image 3</h3>
+    </div>
+    <div id="pic4">
+      <img src="House.png" height="700" width="1000" alt="Image 4">
+      <a class="previous" href="#pic3">&lt;</a>
+      <a class="next" href="#pic5">&gt;</a>
+      <h3>Image 4</h3>
+    </div>
+    <div id="pic5">
+      <img src="inside.png" height="700" width="1000" alt="Image 5">
+      <a class="previous" href="#pic4">&lt;</a>
+      <a class="next" href="#pic1">&gt;</a>
+      <h3>Image 5</h3>
+     </div>
+   </div>
+ </div>
+
+ <div class="row">
+   <div class="column">
+      <p>
+          <a href="Woodpaint.html">
+            <h3>Woodpaint</h3>
+          <img class=img src="woodpaint1.png" height="200" width="200" float="left">
+          </a>
+          자작나무 그림</p>
+    </div>
+
+   <div class="column">
+      <p>
+        <a href="microwave.html">
+          <h3>Microwave</h3>
+        <img class=img src="microwave.png" height="200" width="200" float="left">
+        </a>
+        SANSUNG MS23K3513AW</p>
+     
+   </div>
+
+    <div class="column">
+      <p>
+        <a href="owlpaint.html">
+          <h3>Owlpaint</h3>
+        <img class=img src="owlpaint1.png" height="200" width="200" float="left">
+        </a>
+        올빼미 앉은 나무</p>
+    </div>
+
+    <div class="column">
+      <p>
+          <a href="TV.html">
+            <h3>TV</h3>
+          <img class=img src="TV.png" height="200" width="200" float="left">
+          </a>
+          LZ 75UK7400KNA</p>
+     </div>
+
+ </div>
+   <div class="footer">
+     <h1>꼬리말</h1>
+     © 전북대학교 201923089 홍강의
+   </div>
+
+</body>
+</HTML>
